@@ -1,0 +1,25 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Règles pour la taille des icônes. */
+.material-icons.md-18 { font-size: 18px; } 
+.material-icons.md-24 { font-size: 24px; } 
+.material-icons.md-36 { font-size: 36px; } 
+.material-icons.md-48 { font-size: 48px; } 
+
+/* Règles pour définir différentes couleurs aux icônes. */ 
+.material-icons.md-grey {
+ color: rgb(155, 155, 155);
+ cursor: pointer;
+} 
+.material-icons.md-grey:hover { 
+ color: rgb(105, 105, 105) !important;
+} 
+.material-icons.md-dark-grey { 
+ color: rgb(85, 85, 85);
+ cursor: pointer;
+} 
+.material-icons.md-dark-grey:hover { 
+ color: rgb(65, 65, 65) !important;
+} 
