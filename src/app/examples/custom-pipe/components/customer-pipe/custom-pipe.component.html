@@ -1,0 +1,6 @@
+<div class="container">
+    <h3>Exponential strength pipe :</h3>
+    <p><span>Enter a number: </span><input type="number" [(ngModel)]="numberToTransform"/></p>
+    <p><span>Enter an exponent: </span><input type="number" [(ngModel)]="exponent"/></p>
+    <p>Result : {{numberToTransform | exponentialStrength:exponent}}</p>
+</div>
