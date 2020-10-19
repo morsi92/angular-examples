@@ -10,6 +10,8 @@ import { HttpCallModule } from './http-call/http-call.module';
 import { HttpCallExampleComponent } from './http-call/http-call-example/http-call-example.component';
 import { DirectiveModule } from './directive/directive.module';
 import { DirectiveDemoComponent } from './directive/directive-demo/directive-demo.component';
+import { ReactiveFormModule } from './reactive-form/reactive-form.module';
+import { ReactiveFormExampleComponent } from './reactive-form/reactive-form-example/reactive-form-example.component';
 
 const EXAMPLES_ROUTES : Routes = [
   {
@@ -31,6 +33,11 @@ const EXAMPLES_ROUTES : Routes = [
     path: 'examples/directive',
     pathMatch: 'full',
     component: DirectiveDemoComponent
+  },
+  {
+    path: 'examples/reactive-form',
+    pathMatch: 'full',
+    component: ReactiveFormExampleComponent
   }
 ]
 
@@ -42,7 +49,8 @@ const EXAMPLES_ROUTES : Routes = [
     RouterModule.forChild(EXAMPLES_ROUTES),
     CustomPipeModule,
     HttpCallModule,
-    DirectiveModule
+    DirectiveModule,
+    ReactiveFormModule
   ]
 })
 export class ExamplesModule { }
