@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "api": "json-server mock/api/db.json --routes mock/api/routes.json --no-cors=true"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~10.1.5",
     "@angular/router": "~10.1.5",
     "bootstrap": "^4.2.1",
+    "json-server": "^0.16.2",
     "rxjs": "~6.6.0",
     "schematics-scss-migrate": "^1.1.7",
     "tslib": "^2.0.0",

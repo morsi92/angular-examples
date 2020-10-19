@@ -1,0 +1,16 @@
+{
+    "teams": [
+      {
+        "id": 1,
+        "name": "FC Barcelona",
+        "coach": "Ernesto Valverde",
+        "description": "404 not found"
+      },
+      {
+        "id": 2,
+        "name": "Real Madrid",
+        "coach": "Zinedine Zidane",
+        "description": "13 Champions league"
+      }
+    ]
+}

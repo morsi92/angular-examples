@@ -6,6 +6,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { EventEmitterExampleComponent } from './event-emitter-example/event-emitter-example/event-emitter-example.component';
 import { CustomPipeModule } from './custom-pipe/custom-pipe.module';
 import { CustomPipeComponent } from './custom-pipe/components/customer-pipe/custom-pipe.component';
+import { HttpCallModule } from './http-call/http-call.module';
+import { HttpCallExampleComponent } from './http-call/http-call-example/http-call-example.component';
+import { DirectiveModule } from './directive/directive.module';
+import { DirectiveDemoComponent } from './directive/directive-demo/directive-demo.component';
 
 const EXAMPLES_ROUTES : Routes = [
   {
@@ -17,6 +21,16 @@ const EXAMPLES_ROUTES : Routes = [
     path: 'examples/customer-pipe',
     pathMatch: 'full',
     component: CustomPipeComponent
+  },
+  {
+    path: 'examples/http-call',
+    pathMatch: 'full',
+    component: HttpCallExampleComponent
+  },
+  {
+    path: 'examples/directive',
+    pathMatch: 'full',
+    component: DirectiveDemoComponent
   }
 ]
 
@@ -26,7 +40,9 @@ const EXAMPLES_ROUTES : Routes = [
     CommonModule,
     EventEmitterExampleModule,
     RouterModule.forChild(EXAMPLES_ROUTES),
-    CustomPipeModule
+    CustomPipeModule,
+    HttpCallModule,
+    DirectiveModule
   ]
 })
 export class ExamplesModule { }
